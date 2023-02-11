@@ -17,9 +17,11 @@ namespace UsersApp
 {
     public partial class MainWindow : Window
     {
+        AppContext db;
         public MainWindow()
         {
             InitializeComponent();
+            db = new AppContext();
         }
 
         private void Button_Sign_Click(object sender, RoutedEventArgs e)
@@ -61,6 +63,11 @@ namespace UsersApp
                 textBoxEmail.Background = Brushes.Transparent;
 
                 MessageBox.Show("Everything's okay");
+                
+                User user = new User(login, email, password);
+
+                db.Users.Add(user);
+                db.SaveChanges();
             }
         }
     }
