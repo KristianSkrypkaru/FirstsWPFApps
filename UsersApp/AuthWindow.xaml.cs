@@ -51,12 +51,22 @@ namespace UsersApp
                 if (authUser != null)
                 {
                     MessageBox.Show("Everything's okay");
+                    UserPageWindow userPageWindow = new UserPageWindow();
+                    userPageWindow.Show();
+                    Hide();
                 }
                 else
                 {
                     MessageBox.Show("You entered something incorrect");
                 }
             }
+        }
+
+        private void Button_Reg_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();   
+            mainWindow.Show();
+            Hide();
         }
     }
 }

@@ -35,5 +35,10 @@ namespace UsersApp
             this.Email = email;
             this.Password = password;
         }
+        //public override string ToString() 
+        //{
+        //    return "User: " + Login + ". Email: " + Email;
+        //}
+
     }
 }

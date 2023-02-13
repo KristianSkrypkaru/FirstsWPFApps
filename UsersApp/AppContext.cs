@@ -9,10 +9,8 @@ namespace UsersApp
 {
     class AppContext : DbContext
     {
-        public DbSet<User> Users { get; set; }
+        public DbSet<User> ?Users { get; set; }
         public AppContext() : base("DefaultConnection"){ }
-
-
 
     }
 }

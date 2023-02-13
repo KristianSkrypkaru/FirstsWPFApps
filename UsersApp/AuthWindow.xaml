@@ -16,7 +16,7 @@
                 <TextBlock Text="Authentication" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" />
 
                 <Grid Margin="0 0 0 20">
-                    <Button HorizontalAlignment="Left" Content="Registration" Style="{StaticResource MaterialDesignFlatButton}" />
+                    <Button HorizontalAlignment="Left" Content="Registration" Click="Button_Reg_Click" Style="{StaticResource MaterialDesignFlatButton}" Height="32" VerticalAlignment="Bottom" />
                     <Button HorizontalAlignment="Right" Content="Login" Style="{StaticResource MaterialDesignFlatButton}" />
                 </Grid>
                 <TextBox x:Name="textBoxLogin" materialDesign:HintAssist.Hint="Enter your login" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />

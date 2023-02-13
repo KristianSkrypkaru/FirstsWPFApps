@@ -17,7 +17,7 @@
 
                 <Grid Margin="0 0 0 20">
                     <Button HorizontalAlignment="Left" Content="Registration" Style="{StaticResource MaterialDesignFlatButton}" />
-                    <Button HorizontalAlignment="Right" Content="Login" Style="{StaticResource MaterialDesignFlatButton}" />
+                    <Button HorizontalAlignment="Right" Content="Login" Click="Button_Window_Auth_Click" Style="{StaticResource MaterialDesignFlatButton}" />
                 </Grid>
                 <TextBox x:Name="textBoxLogin" materialDesign:HintAssist.Hint="Enter your login" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
                 <PasswordBox x:Name="passwordBox" materialDesign:HintAssist.Hint="Enter your password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" />
