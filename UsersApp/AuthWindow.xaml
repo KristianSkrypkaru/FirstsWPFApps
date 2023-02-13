@@ -4,9 +4,20 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UsersApp"
-       mc:Ignorable="d"
+        mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="UsersApp" Height="450" Width="700">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <EventTrigger.Actions>
+                <BeginStoryboard>
+                    <Storyboard TargetProperty="Width" TargetName="signButton">
+                        <DoubleAnimation From="200" To="0" AutoReverse="True" RepeatBehavior="3x" Duration="0:0:3" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger.Actions>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid Background="AliceBlue">
         <Border MinWidth="400" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
             <Border.Effect>
@@ -21,7 +32,7 @@
                 </Grid>
                 <TextBox x:Name="textBoxLogin" materialDesign:HintAssist.Hint="Enter your login" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
                 <PasswordBox x:Name="passwordBox" materialDesign:HintAssist.Hint="Enter your password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" />
-                <Button Content="Sign in to the account" Margin="0 20" Click="Button_Auth_Click"/>
+                <Button x:Name="signButton" Content="Sign in to the account" Margin="0 20" Click="Button_Auth_Click"/>
             </StackPanel>
         </Border>
     </Grid>

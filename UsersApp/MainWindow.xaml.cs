@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Media.Animation;
 
 namespace UsersApp
 {
@@ -22,6 +23,12 @@ namespace UsersApp
         {
             InitializeComponent();
             db = new AppContext();
+
+            DoubleAnimation buttonAnimation = new DoubleAnimation();
+            buttonAnimation.From = 0;
+            buttonAnimation.To = 200;
+            buttonAnimation.Duration = TimeSpan.FromSeconds(4);
+            regButton.BeginAnimation(Button.WidthProperty, buttonAnimation);
         }
 
         private void Button_Sign_Click(object sender, RoutedEventArgs e)
