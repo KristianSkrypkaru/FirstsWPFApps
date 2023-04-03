@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsersApp", "UsersApp\UsersA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfBasics", "WpfBasics\WpfBasics.csproj", "{7A48049B-BB29-4A3B-A24E-B938D67C7FF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileApp", "MobileApp\MobileApp.csproj", "{90FA90D6-8CD3-464C-B94B-C6289F52EE1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeView", "MobileApp\TreeView.csproj", "{90FA90D6-8CD3-464C-B94B-C6289F52EE1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
