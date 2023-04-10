@@ -23,7 +23,7 @@ namespace TreeView
                 return null;
 
             // Get the name of the file/folder
-            var name = MainWindow.GetFileFolderName(path);
+            var name = DirectorySturcture.GetFileFolderName(path);
 
             // By default, we presume an image
             var image = "Images/file.png";

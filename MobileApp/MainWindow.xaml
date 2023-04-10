@@ -6,11 +6,12 @@
         xmlns:local="clr-namespace:TreeView"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="520">
+
     <Grid>
-        
+
         <TreeView x:Name="FolderView">
             <TreeView.Resources>
-                
+
                 <Style TargetType="{x:Type TreeViewItem}">
                     <Setter Property="HeaderTemplate">
                         <Setter.Value>
@@ -27,11 +28,11 @@
                                 </StackPanel>
                             </DataTemplate>
                         </Setter.Value>
-                    </Setter>  
+                    </Setter>
                 </Style>
             </TreeView.Resources>
         </TreeView>
-       
-        
+
+
     </Grid>
 </Window>
