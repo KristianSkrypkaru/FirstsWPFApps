@@ -14,10 +14,10 @@ namespace TreeView
         /// Gets all logical drives on the computer
         /// </summary>
         /// <returns></returns>
-        public static List<DirectoryItem> GetLogicalDrives() 
+        public static List<DirectoryItem> GetLogicalDrives()
         {
             // Get every logical drive on the machine
-            return Directory.GetLogicalDrives().Select(drive => new DirectoryItem { FullPath = drive, Type = DirectoryItemType.Drive}).ToList();
+            return Directory.GetLogicalDrives().Select(drive => new DirectoryItem { FullPath = drive, Type = DirectoryItemType.Drive }).ToList();
         }
 
         public static List<DirectoryItem> GetDirectoryContents(string fullPath)
@@ -42,7 +42,7 @@ namespace TreeView
                 var fs = Directory.GetFiles(fullPath);
 
                 if (fs.Length > 0)
-                    items.AddRange(fs.Select(file => new DirectoryItem { FullPath = file, Type = DirectoryItemType.File}));
+                    items.AddRange(fs.Select(file => new DirectoryItem { FullPath = file, Type = DirectoryItemType.File }));
             }
             catch { }
             return items;

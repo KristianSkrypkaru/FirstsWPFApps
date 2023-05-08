@@ -81,6 +81,9 @@ namespace TreeView
             //Set path and type
             this.FullPath= fullPath;
             this.Type = type;
+
+            //Setup the children as needed
+            this.ClearChildren();
         }
 
         #endregion

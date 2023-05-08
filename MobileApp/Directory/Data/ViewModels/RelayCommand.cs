@@ -27,7 +27,7 @@ namespace TreeView
         /// <summary>
         /// Default Constructor
         /// </summary>
-        public RelayCommand(Action action) 
+        public RelayCommand(Action action)
         {
             mAction = action;
         }

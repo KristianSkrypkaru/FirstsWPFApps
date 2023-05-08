@@ -11,6 +11,8 @@ namespace TreeView
         public MainWindow()
         {
             InitializeComponent();
+
+            this.DataContext = new DirectoryStructureViewModel();
         }
         #endregion
         
