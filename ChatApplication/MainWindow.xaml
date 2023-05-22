@@ -8,8 +8,8 @@
         WindowStyle="None"
         AllowsTransparency="True"
         Icon="Images/Logo/logo-small.png"
-        Title="MainWindow" Height="350" Width="530">
-    <Grid>
-
-    </Grid>
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        
+    </StackPanel>
 </Window>
