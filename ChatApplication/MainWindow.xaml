@@ -10,6 +10,6 @@
         Icon="Images/Logo/logo-small.png"
         Title="MainWindow" Height="350" Width="525">
     <StackPanel>
-        
+        <TextBlock Text="{Binding Test}"/>
     </StackPanel>
 </Window>

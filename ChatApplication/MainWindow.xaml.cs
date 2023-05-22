@@ -23,6 +23,7 @@ namespace ChatApplication
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new WindowViewModel(this);
         }
     }
 }
