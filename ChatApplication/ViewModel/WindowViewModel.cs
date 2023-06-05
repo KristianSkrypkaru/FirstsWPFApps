@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Input;
 
 namespace ChatApplication
 {
@@ -74,9 +75,28 @@ namespace ChatApplication
         /// The radius of the edges of the window
         /// </summary>
         public CornerRadius WindowCornerRadius { get { return new CornerRadius(WindowRadius); } }
+
+        /// <summary>
+        /// The height of the title of bar / caption of the window
+        /// </summary>
+        public int TitleHeight { get; set; } = 42;
+
+        /// <summary>
+        /// The height of the title of bar / caption of the window
+        /// </summary>
+        public GridLength TitleHeightGridLength { get { return new GridLength(TitleHeight + ResizeBorder); } }
         #endregion
 
-        public int TitleHeight { get; set; } = 42;
+        #region Command
+        /// <summary>
+        /// The command to minimize the window
+        /// </summary>
+        public ICommand MinimizeCommand { get; set; }
+        /// <summary>
+        /// The command to maximize the window
+        /// </summary>
+        public ICommand MaximizeCommand { get; set; }
+        #endregion
 
         #region Constructor
         /// <summary>
